@@ -20,10 +20,10 @@ class Song
   end
 
   def artist=(artist_name)
-    if self.artist.nil?
-      self.artist = Artist.new(artist_name)
-    else
-      self.artist.name = artist_name
-    end
+    # if self.artist.nil?
+    #   self.artist = Artist.new(artist_name)
+    # else
+    #   self.artist.name = artist_name
+    # end
   end
 end
