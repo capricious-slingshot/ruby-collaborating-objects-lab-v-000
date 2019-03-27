@@ -22,6 +22,6 @@ class Song
   end
 
   def artist=(artist_name)
-    self.artist = Artist.new(artist_name)
+    self.artist.nil? ? Artist.new(artist_name) : self.artist = artist_name
   end
 end
