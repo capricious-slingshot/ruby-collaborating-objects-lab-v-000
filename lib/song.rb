@@ -21,7 +21,4 @@ class Song
     @@all << song
   end
 
-  def artist=(artist_name)
-    self.artist.nil? ? Artist.new(artist_name) : self.artist = artist_name
-  end
 end
