@@ -13,7 +13,7 @@ class MP3Importer
     self.files.each do |song|
       info = song.gsub(/.mp3/, '').split(' - ')
       binding.pry
-      Song.new(info[1])
+      Song.new("#{info[1]}")
     end
   end
 end
