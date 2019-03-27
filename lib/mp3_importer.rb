@@ -6,6 +6,6 @@ class MP3Importer
   end
 
   def files
-    mp3s = Dir.entries(path).select {|f| !File.directory? f}
+    Dir.entries(path).select {|f| !File.directory? f}
   end
 end
