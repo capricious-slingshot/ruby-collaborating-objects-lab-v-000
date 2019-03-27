@@ -8,4 +8,8 @@ class MP3Importer
   def files
     Dir.entries(self.path).select {|f| !File.directory? f}
   end
+
+  def import
+    binding.pry
+  end
 end
