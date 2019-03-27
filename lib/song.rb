@@ -18,11 +18,11 @@ class Song
     Song.new(info[1], info[0], info[2])
   end
 
-  def artist=(artist_name)
-    # if self.artist.nil?
-    #   self.artist = Artist.new(artist_name)
-    # else
-    #   self.artist.name = artist_name
-    # end
-  end
+  # def artist=(artist_name)
+  #   # if self.artist.nil?
+  #   #   self.artist = Artist.new(artist_name)
+  #   # else
+  #   #   self.artist.name = artist_name
+  #   # end
+  # end
 end
