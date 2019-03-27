@@ -11,7 +11,7 @@ class MP3Importer
 
   def import
     self.files.each do |song|
-      info = song.split(' - ').gsub(/.mp3/, '')
+      info = song.gsub(/.mp3/, '').split(' - ')
       Song.new(info[1])
     end
   end
