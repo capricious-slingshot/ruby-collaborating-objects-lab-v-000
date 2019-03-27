@@ -10,10 +10,6 @@ class MP3Importer
   end
 
   def import
-    self.files.each do |song|
-      info = song.gsub(/.mp3/, '').split(' - ')
-      # binding.pry
-      Song.new("#{info[1]}")
-    end
+    self.files.each {|song| Song.new_by_filename(song) }
   end
 end
