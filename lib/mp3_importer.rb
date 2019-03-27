@@ -10,6 +10,9 @@ class MP3Importer
   end
 
   def import
-    binding.pry
+    self.files.each do |song|
+      info = song.split(' - ').gsub(/.mp3/, '')
+      Song.new(info[1])
+    end
   end
 end
