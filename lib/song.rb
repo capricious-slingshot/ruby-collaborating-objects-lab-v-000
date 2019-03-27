@@ -14,7 +14,7 @@ class Song
   end
 
   def self.new_by_filename(file)
-    info = song.gsub(/.mp3/, '').split(' - ')
+    info = file.gsub(/.mp3/, '').split(' - ')
     song = Song.new(info[1], info[0], info[2])
     @@all << song
   end
