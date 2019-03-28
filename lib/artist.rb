@@ -29,7 +29,8 @@ class Artist
     if artist_found
       artist_found
     else
-      @@all << Artist.new(artist_name)
+      new_artist = Artist.new(artist_name)
+      new_artist.save
     end
   end
 
