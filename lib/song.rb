@@ -17,7 +17,7 @@ class Song
     song = Song.new(info[1])
     artist = Artist.find_or_create_by_name(info[0])
     song.artist = artist
-    Artist.songs << song
+    artist.songs << song
     @@all << song
     song
   end
