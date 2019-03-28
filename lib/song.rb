@@ -17,6 +17,7 @@ class Song
     song = Song.new(info[1])
     @@all << song
     song
+    binding.pry
   end
 
 end
