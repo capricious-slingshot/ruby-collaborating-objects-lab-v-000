@@ -26,7 +26,7 @@ class Artist
     #   artist.name == artist_name ? artist : Artist.new(artist_name)
     # end
     artist_found = self.all.find {|artist| artist.name == artist_name}
-    if artist_found?
+    if artist_found
       artist_found
     else
       Artist.new(artist_name)
