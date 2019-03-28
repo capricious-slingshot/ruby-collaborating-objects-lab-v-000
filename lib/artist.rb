@@ -32,6 +32,7 @@ class Artist
       new_artist = Artist.new(artist_name)
       new_artist.save
       new_artist
+      #could be refactored in to create method
     end
   end
 
