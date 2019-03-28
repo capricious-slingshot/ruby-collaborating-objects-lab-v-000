@@ -29,7 +29,7 @@ class Artist
     if artist_found
       artist_found
     else
-      Artist.new(artist_name)
+      @@all << Artist.new(artist_name)
     end
   end
 
