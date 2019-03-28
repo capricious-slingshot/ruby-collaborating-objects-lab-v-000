@@ -33,6 +33,7 @@ describe 'Song' do
       Artist.class_variable_set("@@all",[])
       new_instance = Song.new_by_filename(file_name)
       expect(new_instance.artist.name).to eq('Michael Jackson')
+      binding.pry
       expect(Artist.all.size).to eq(1)
       expect(Artist.all.first.songs.empty?).to eq(false)
     end
